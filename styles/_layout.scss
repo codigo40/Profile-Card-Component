@@ -1,0 +1,84 @@
+.body{
+width: 100%;
+height: 100vh;
+background-color:$Dark-cyan;
+font-family: $Font-family;
+background-image: url(../images/bg-pattern-top.svg), url(../images/bg-pattern-bottom.svg);
+background-repeat: no-repeat no-repeat;
+background-position: right 46vw bottom 51vh, left 45vw top 51vh;
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+
+}
+.main{
+&__card{
+    background-color: white;
+    width: 22rem;
+    height: 23.5rem;
+    overflow: hidden;
+    border-radius: 1rem;
+}
+&__card-img{
+width: 100%;
+height: 8.8rem;
+}
+&__card-victor{
+  border: white 5px solid; 
+  border-radius: 50%;
+  margin-top: -3.5rem;
+}
+&__card-author{
+padding-bottom: 1.5rem;
+border-bottom: 1px rgb(223, 218, 218) solid;
+
+&--location{
+  color:$Dark-grayish-blue ;
+  font-size:.9rem ;
+}
+}
+&__card-author-name-age{
+display: flex;
+align-items: baseline;
+justify-content: center;
+gap: .5rem;
+margin-top: 1rem;
+letter-spacing: 1px;
+margin-bottom: .5rem;
+}
+&__card-author-name{ 
+  font-size: 1rem;
+}
+&__card-author-age{
+  color:$Dark-grayish-blue;
+}
+&__card-data{
+  display: flex;
+  justify-content: center;
+  width: 15rem;
+  gap: 3rem;
+  margin-top: 1.5rem;
+  margin-left: 3.2rem;
+}
+&__card-data-item{
+  display: flex;
+  flex-direction: column;
+  :last-child{
+    margin-left: 1rem;
+  }
+}
+
+&__card-data-item-number{
+font-weight: bold;
+font-size: $Font-size;
+}
+&__card-data-item-definition{
+font-size: .75rem;
+color: $Dark-grayish-blue;
+
+
+}
+
+
+}
